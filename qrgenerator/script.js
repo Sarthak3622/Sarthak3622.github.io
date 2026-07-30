@@ -11,7 +11,7 @@ const onGenerateSubmit = (e) => {
 
      // Retrieve values from the URL and size input fields
     const url = document.getElementById('url').value;
-    const size = document.getElementById('size').value
+    const size = document.getElementById('size').value;
 
      // Check if the URL is empty
     if(url == ""){
