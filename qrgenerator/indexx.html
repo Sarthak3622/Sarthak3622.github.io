@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>QR Code Generator</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        QR Code Generator
+    </header>
+
+    <div class="container">
+
+        <!-- QR Code Section -->
+        <div id="imgBox">
+            <div id="qrcode"></div>
+        </div>
+
+
+        <!-- Input and Button Section -->
+        <div class="input-container">
+
+            <form id="generate-form">
+
+                <!-- URL Input -->
+                <input type="text" id="url" placeholder="Enter URL">
+
+                <br><br>
+
+
+                <!-- QR Size Selection -->
+                <select id="size">
+                    <option value="100">100x100</option>
+                    <option value="200">200x200</option>
+                    <option value="300">300x300</option>
+                    <option value="400">400x400</option>
+                    <option value="500">500x500</option>
+                    <option value="600">600x600</option>
+                    <option value="700">700x700</option>
+                </select>
+
+                <br><br>
+
+
+                <!-- Generate Button -->
+                <button type="submit">
+                    Generate QR
+                </button>
+
+
+                <br><br>
+
+
+                <!-- Download Button -->
+                <button id="downloadBtn" type="button" style="display:none;">
+                    Download QR Code
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
