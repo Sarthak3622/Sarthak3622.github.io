@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Gym | BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+🏋️ FitZone Gym
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="bmi.html" class="active">BMI Calculator</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<!-- Banner -->
+
+<section class="page-banner">
+
+<h1>BMI Calculator</h1>
+
+<p>Know Your Body Mass Index</p>
+
+</section>
+
+<!-- Calculator -->
+
+<section class="calculator">
+
+<h2>Calculate Your BMI</h2>
+
+<div class="bmi-box">
+
+<label>Weight (kg)</label>
+
+<input
+type="number"
+id="weight"
+placeholder="Enter weight">
+
+<label>Height (cm)</label>
+
+<input
+type="number"
+id="height"
+placeholder="Enter height">
+
+<button onclick="calculateBMI()">
+Calculate BMI
+</button>
+
+<button class="reset-btn" onclick="resetBMI()">
+Reset
+</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+</section>
+
+<!-- BMI Information -->
+
+<section class="features">
+
+<h2>BMI Categories</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Underweight</h3>
+<p>BMI less than 18.5</p>
+</div>
+
+<div class="card">
+<h3>Normal</h3>
+<p>BMI between 18.5 and 24.9</p>
+</div>
+
+<div class="card">
+<h3>Overweight</h3>
+<p>BMI between 25 and 29.9</p>
+</div>
+
+<div class="card">
+<h3>Obese</h3>
+<p>BMI 30 or above</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Fitness Tips -->
+
+<section class="features">
+
+<h2>Healthy Tips</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🥗 Eat Healthy</h3>
+<p>Include protein, vegetables, fruits and whole grains.</p>
+</div>
+
+<div class="card">
+<h3>💧 Stay Hydrated</h3>
+<p>Drink at least 2–3 litres of water every day.</p>
+</div>
+
+<div class="card">
+<h3>🏃 Exercise Daily</h3>
+<p>Workout for at least 30–60 minutes daily.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="join">
+
+<h2>Ready to Improve Your Fitness?</h2>
+
+<p>
+Join FitZone Gym and achieve your goals with expert trainers.
+</p>
+
+<button onclick="joinNow()">
+Join Now
+</button>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 FitZone Gym | BMI Calculator
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
