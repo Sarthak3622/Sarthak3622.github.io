@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Pad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form class="signature-pad-form">
+
+    <h1>Signature Pad</h1>
+
+    <p class="description">
+      Simple Signature Pad using Canvas
+    </p>
+
+    <label for="signature">Signature</label>
+
+    <canvas
+      id="signature"
+      width="300"
+      height="150"
+      class="signature-pad">
+    </canvas>
+
+    <div class="buttons">
+
+      <button type="button" class="clear-button">
+        Clear
+      </button>
+
+      <button type="submit" class="submit-button">
+        Submit
+      </button>
+
+    </div>
+
+    <button type="button" class="save-button">
+      Save Signature
+    </button>
+
+  </form>
+
+  <script src="sigg.js"></script>
+
+</body>
+
+</html>
